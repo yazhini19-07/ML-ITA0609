@@ -1,0 +1,13 @@
+# Restaurant Billing
+items = int(input("Enter Number of Food Items: "))
+total = 0
+for i in range(items):
+    price = float(input("Enter Price of Item {i+1}: "))
+    total += price
+gst = total * 0.05
+service = total * 0.10
+final = total + gst + service
+print("Food Bill =", total)
+print("GST =", gst)
+print("Service Charge =", service)
+print("Total Bill =", final)
