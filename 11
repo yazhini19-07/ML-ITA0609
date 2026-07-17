@@ -1,0 +1,9 @@
+distance = float(input("Enter distance (km): "))
+mileage = float(input("Enter mileage (km/l): "))
+price = float(input("Enter fuel price per litre: "))
+
+fuel = distance / mileage
+cost = fuel * price
+
+print("Fuel Required:", round(fuel, 2), "litres")
+print("Total Fuel Cost: Rs.", round(cost, 2))
