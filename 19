@@ -1,0 +1,6 @@
+stock = int(input("Enter current stock: "))
+minimum = int(input("Enter minimum stock level: "))
+if stock < minimum:
+    print("Restock Required")
+else:
+    print("Stock Sufficient")
