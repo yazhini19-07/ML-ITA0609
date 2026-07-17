@@ -1,0 +1,7 @@
+temps = []
+for i in range(7):
+    t = float(input(f"Enter temperature for Day {i+1}: "))
+    temps.append(t)
+print("Maximum Temperature:", max(temps))
+print("Minimum Temperature:", min(temps))
+print("Average Temperature:", sum(temps) / len(temps))
