@@ -1,0 +1,11 @@
+category = input("Enter seat category (Silver/Gold): ").lower()
+tickets = int(input("Enter number of tickets: "))
+if category == "silver":
+    price = 150
+elif category == "gold":
+    price = 250
+else:
+    print("Invalid Category")
+    exit()
+total = tickets * price
+print("Total Ticket Cost: Rs.", total)
