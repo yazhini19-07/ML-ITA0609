@@ -1,0 +1,9 @@
+# Bank Interest Calculator
+principal = float(input("Enter Principal Amount: "))
+rate = float(input("Enter Rate of Interest: "))
+time = float(input("Enter Time (Years): "))
+si = (principal * rate * time) / 100
+ci = principal * ((1 + rate / 100) ** time) - principal
+print("Simple Interest =", si)
+print("Compound Interest =", ci)
+
